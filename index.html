@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="container">
+        <h2>Signup Form</h2>
+
+        <form id="signupForm" onsubmit="return validateSignup()">
+
+            <div><label for="username">UserName:</label>
+                <input type="text" id="username" name="username">
+                <span id="usernamefeedback"></span>
+            </div>
+
+            <div><label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailfeedback"></span>
+            </div>
+
+            <div><label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <span id="passwordfeedback"></span>
+            </div>
+
+            <div><label for="confirmpassword">Confirm Password:</label>
+                <input type="password" id="confirmpassword" name="confirmpassword">
+                <span id="confirmpasswordfeedback"></span>
+            </div>
+
+            <input type="submit" value="Sign Up">
+
+        </form>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
